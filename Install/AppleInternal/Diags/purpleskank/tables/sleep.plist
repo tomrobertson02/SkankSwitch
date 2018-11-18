@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+		<key>Name</key>
+		<string>Sleep Table</string>
+		<key>Setup</key>
+		<array/>
+		<key>Teardown</key>
+		<array/>
+		<key>Tests</key>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<array>
+					<string>5</string>
+				</array>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>CheckConfig pre-sleep</string>
+				<key>Path</key>
+				<string>/bin/sleep</string>
+				<key>TestID</key>
+				<integer>10</integer>
+				<key>Timeout</key>
+				<integer>20</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<array>
+					<string>-n 1</string>
+					<string>-w 30</string>
+					<string>-s 30</string>
+				</array>
+				<key>Enabled</key>
+				<true/>
+				<key>TotalIterations</key>
+				<integer>1</integer>
+				<key>Name</key>
+				<string>SleepCycler</string>
+				<key>Path</key>
+				<string>/usr/local/bin/SleepCycler</string>
+				<key>TestID</key>
+				<integer>1110</integer>
+				<key>Timeout</key>
+				<integer>180</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<array>
+					<string>-n 1</string>
+					<string>-w 15</string>
+					<string>-s 15</string>
+				</array>
+				<key>Enabled</key>
+				<true/>
+				<key>TotalIterations</key>
+				<integer>1</integer>
+				<key>Name</key>
+				<string>CheckConfig post-sleep</string>
+				<key>Path</key>
+				<string>/usr/bin/true</string>
+				<key>TestID</key>
+				<integer>1115</integer>
+				<key>Timeout</key>
+				<integer>30</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+		</array>
+		<key>Type</key>
+		<string>Suite</string>
+	</dict>
+</array>
+</plist>

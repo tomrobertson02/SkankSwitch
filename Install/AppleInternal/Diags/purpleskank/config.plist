@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BurnInCommand</key>
+	<string>/AppleInternal/Diags/purpleskank/factoryharness -i -c /AppleInternal/Diags/purpleskank/config.plist -x /AppleInternal/Diags/Logs/burning_log.xml -s /AppleInternal/Diags/Logs/burnin_log.txt</string>
+	<key>CleanupCommand</key>
+	<string>/AppleInternal/Diags/Utilities/burnin_cleanup.sh</string>
+	<key>DimBacklight</key>
+	<integer>200</integer>
+	<key>FailuresFile</key>
+	<string>/AppleInternal/Diags/Logs/failures.plist</string>
+	<key>IndexFile</key>
+	<string>/AppleInternal/Diags/purpleskank/tables/index.plist</string>
+	<key>MinExecutionTime</key>
+	<integer>10</integer>
+	<key>ProcessLogFile</key>
+	<string>/AppleInternal/Diags/Logs/burnin_processlog.txt</string>
+	<key>StateFile</key>
+	<string>/AppleInternal/Diags/Logs/state.plist</string>
+	<key>StatusFile</key>
+	<string>/AppleInternal/Diags/Logs/burnin_test.txt</string>
+	<key>SummaryFile</key>
+	<string>/AppleInternal/Diags/Logs/burnin_summary.plist</string>
+	<key>TempStatusFile</key>
+	<string>/AppleInternal/Diags/Logs/status.txt</string>
+	<key>TestEnvironmentVersion</key>
+	<string>TE v0.x.xd Undefined</string>
+</dict>
+</plist>

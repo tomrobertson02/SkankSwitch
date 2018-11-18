@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+		<key>Name</key>
+		<string>Memory and Nand Tests</string>
+		<key>Setup</key>
+		<array/>
+		<key>Teardown</key>
+		<array/>
+		<key>Tests</key>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<array/>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>Memory</string>
+				<key>Path</key>
+				<string>/AppleInternal/Diags/Tests/memoryTest</string>
+				<key>TestID</key>
+				<integer>10</integer>
+				<key>Timeout</key>
+				<integer>2400</integer>
+				<key>TotalIterations</key>
+				<integer>1</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<array>
+					<string>2</string>
+					<string>2</string>
+				</array>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>Nand Thrasher</string>
+				<key>Path</key>
+				<string>/AppleInternal/Diags/Tests/filetest.pl</string>
+				<key>TestID</key>
+				<integer>15</integer>
+				<key>Timeout</key>
+				<integer>600</integer>
+				<key>TotalIterations</key>
+				<integer>1</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<array>
+					<string>400</string>
+				</array>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>MBXQuicklook</string>
+				<key>Path</key>
+				<string>/usr/local/bin/MBXQuicklook</string>
+				<key>TestID</key>
+				<integer>20</integer>
+				<key>Timeout</key>
+				<integer>330</integer>
+				<key>TotalIterations</key>
+				<integer>1</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+		</array>
+		<key>Type</key>
+		<string>Suite</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Enabled</key>
+		<true/>
+		<key>Name</key>
+		<string>QuickLook</string>
+		<key>RebootTimeout</key>
+		<integer>5</integer>
+		<key>Setup</key>
+		<array/>
+		<key>Teardown</key>
+		<array/>
+		<key>Tests</key>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<array>
+					<string></string>
+				</array>
+				<key>Disable</key>
+				<true/>
+				<key>Name</key>
+				<string>SKReboot</string>
+				<key>Path</key>
+				<string>/sbin/reboot</string>
+				<key>TestID</key>
+				<integer>1</integer>
+				<key>Timeout</key>
+				<integer>30</integer>
+				<key>TotalIterations</key>
+				<integer>5</integer>
+				<key>Type</key>
+				<string>functionality</string>
+			</dict>
+		</array>
+		<key>Type</key>
+		<string>Suite</string>
+	</dict>
+</array>
+</plist>
